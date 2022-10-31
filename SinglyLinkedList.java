@@ -13,7 +13,7 @@ class SinglyLinkedList<T>
     public Node remove(Node head, int k)
     {
 
-        Node returnNode = head;
+        Node node = head;
         Node current = new Node();
         Node previous = head;
 
@@ -30,7 +30,7 @@ class SinglyLinkedList<T>
             }
         }
         previous.next = current.next;
-        return returnNode;
+        return node;
     }
 
     public Node push(Node head, T new_data)
